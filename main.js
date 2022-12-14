@@ -43,7 +43,9 @@ function exchange(event) {
 
     inputValue = input.value;
 
-    if(inputValue === "" || filterVal === "CHOOSE" ) {
+    let convertStatus = Number(inputValue);
+
+    if(inputValue === "" || filterVal === "CHOOSE" || isNaN(convertStatus) == true ) {
         alert("نوع تبدیل را  انتخاب نکرده اید یا مبلغ مورد نظر را وارد نکرده اید");
     }
     else {
